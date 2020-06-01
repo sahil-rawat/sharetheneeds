@@ -1,0 +1,41 @@
+name: hacknu
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^0.1.3
+  firebase_core: ^0.4.4+2
+  firebase_auth: ^0.15.5+2
+  cloud_firestore: ^0.13.4+1
+  google_sign_in: ^4.1.4
+  rflutter_alert:
+  flutter_auth_buttons:
+  font_awesome_flutter: ^8.7.0
+  geolocator: ^5.3.1
+  geocoder: ^0.2.1
+  location: ^3.0.2
+  provider: ^4.1.2
+  url_launcher: ^5.4.10
+  multiselect_formfield: ^0.1.3
+  flutter_icons: ^1.1.0
+  translator: ^0.1.4
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
