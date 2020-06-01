@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ShareTheNeeds</title>
+		<link rel="stylesheet" type="text/css" href="./assets/css/login.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	</head>
+	<body>
+		<div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<div class="cont" >
+			<div class="form sign-in">
+				<p id="p_em"></p>
+				<div id="sigining" style="display: block;">
+					<h2 >Welcome back,</h2>
+					<label>
+						<span>Email</span>
+						<input type="email" id='user_email'/>
+					</label>
+					<label>
+						<span>Password</span>
+						<input type="password" id='user_pass'/>
+					</label>
+					<button type="button" onclick="reset()" class="forgot-pass">Forgot password?</button>
+					<button id="sign-in" type="button" class="submit" onclick="login()">Sign In</button>
+					<button type="button" class="fb-btn" onclick="withGoogle()">Connect with <span>Google</span></button>
+				</div>
+			</div>
+			<div class="sub-cont">
+				<div class="img">
+					<div class="img__text m--up">
+						<h2>New here?</h2>
+						<p>Sign up and start helping the community!</p>
+					</div>
+					<div class="img__text m--in">
+						<h2>One of us?</h2>
+						<p>If you already has an account, just sign in. We've missed you!</p>
+					</div>
+					<div class="img__btn">
+						<span class="m--up">Sign Up</span>
+						<span class="m--in">Sign In</span>
+					</div>
+				</div>
+				<div class="form sign-up">
+					<h2>Time to feel like home,</h2>
+					<label>
+						<span>Name</span>
+						<input type="text" id="name"/>
+					</label>
+					<label>
+						<span>Email</span>
+						<input type="email" id="create_user_email"/>
+					</label>
+					<label>
+						<span>Password</span>
+						<input type="password" id="create_user_pass"/>
+					</label>
+					<button type="button" class="submit" onclick="signup()">Sign Up</button>
+					<button type="button" class="fb-btn" onclick="withGoogle()">Connect with <span>Google</span></button>
+					</div>
+			</div>
+		</div>
+
+		<!-- ------------Firebase Config Script Tags----------------- -->
+		<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+		<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyDh6qJ0S12sZd_pP45Ka7zyj0whOzQ89EE",
+			authDomain: "hacknu-b9c62.firebaseapp.com",
+			databaseURL: "https://hacknu-b9c62.firebaseio.com",
+			projectId: "hacknu-b9c62",
+			storageBucket: "hacknu-b9c62.appspot.com",
+			messagingSenderId: "781519606976",
+			appId: "1:781519606976:web:afd5fdabf8f5d1fdc90925",
+			measurementId: "G-0XPK0KRLD1"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+		</script>
+		<!-- ------------Firebase Config Script Tags----------------- -->
+
+		<script type="text/javascript" src="./assets/js/login.js"></script>
+	</body>
+</html>
