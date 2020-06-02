@@ -1,5 +1,6 @@
 
 # [___ShareTheNeeds___](https://sharetheneeds.herokuapp.com)
+![logo](./lotus_large.png)
 
 ____
 
