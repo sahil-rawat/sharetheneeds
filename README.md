@@ -70,6 +70,31 @@ ___
 ![profile screen](./scrrenshots_web/profile_page.png)
 
 ___
+### *Screenshots of App*
+#### Location Access Request
+![location Access Alert](./scrrenshots/location_access_request.png)
+
+___
+___
+#### Login
+![Login Screen](./scrrenshots/login_page.png)
+![Login By Phone No](./scrrenshots/phone_number_login.png)
+
+___
+___
+#### App Interface
+![Home Screen](./scrrenshots/home.png)
+![Sort Menu](./scrrenshots/sort_menu.png)
+![Sidebar Menu](./scrrenshots/sidebar_menu.png)
+![Our Vision Page](./scrrenshots/our_vision.png)
+
+___
+___
+#### Add Essentials
+![Add Essentials Form](./scrrenshots/add_essentials_form.png)
+![Sort Menu](./scrrenshots/sort_menu.png)
+
+___
 ## *Technologies :*
 
 We have used different technologies in our app and website which are as follows :
