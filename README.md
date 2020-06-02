@@ -1,7 +1,7 @@
 
 # [___ShareTheNeeds___](https://sharetheneeds.herokuapp.com)
 <p align="center">
-  <img src="./lotus_large.png">
+  <img src="./scrrenshots_web/lotus_large.png">
 </p>
 
 ____
