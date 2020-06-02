@@ -141,8 +141,8 @@ ___
 - Contribution: Data Analysis in python and flask
 
 ___
-> ### Ish Choudhary
-- Email: ish.choudhary18@niituniversity.in
+> ### Ish Chaudhary
+- Email: ish.chaudhary18@niituniversity.in
 - Contribution: Data Analysis in python and flask
 
 ___
