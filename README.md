@@ -110,7 +110,7 @@ Instructions For Using
 - Install NodeJs on your computer
 - Open Terminal and enter `npm start`
 - Open The Browser and goto 127.0.0.1:3000 or localhost:3000 (if the port is busy look in terminal the port no. and enter that replacing 3000) or
-- Visit :
+- Visit : https://sharetheneeds.herokuapp.com
 
 #### Website(Analysis) :
 - Clone the repo locally
@@ -122,6 +122,7 @@ ___
 
 ## *Support :*
 - Email id : sharetheneeds@gmail.com
+- Web : https://sharetheneeds.herokuapp.com
 ___
 
 ## *Author and Acknowledment :*
