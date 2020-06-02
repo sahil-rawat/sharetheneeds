@@ -132,6 +132,8 @@ Instructions For Using
 - Clone the Repo locally
 - Open the Website Folder
 - Install NodeJs on your computer
+- Enable Google map java script API and Places API from google devloper console
+- Replace your key in user.html in Dashboard tab in script tag at [<YourKeyHere>]
 - Open Terminal and enter `npm start`
 - Open The Browser and goto `127.0.0.1:3000` or `localhost:3000` (if the port is busy look in terminal the port no. and enter that replacing 3000) or
 - Visit : https://sharetheneeds.herokuapp.com
