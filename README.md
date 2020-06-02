@@ -98,7 +98,7 @@ Instructions For Using
 - Requirements - Flutter SDK, Android Studio (or any IDE you preffer for devloping flutter Apps)
 - Import the App Folder in Android Studio or your prefferable IDE 
 - Build APK from the Flutter Project or 
-- Get the APK from: 
+- Get the APK from: https://drive.google.com/file/d/1ef-WEqnGATrHg7yruLcsmDAZ5B9aoRz9/view?usp=sharing
 
 #### Website(Marker Adding) :
 - Clone the Repo locally
@@ -106,7 +106,7 @@ Instructions For Using
 - Install NodeJs on your computer
 - Open Terminal and enter `npm start`
 - Open The Browser and goto `127.0.0.1:3000` or `localhost:3000` (if the port is busy look in terminal the port no. and enter that replacing 3000) or
-- Visit :
+- Visit : https://sharetheneeds.herokuapp.com
 
 #### Website(Analysis) :
 - Clone the repo locally
