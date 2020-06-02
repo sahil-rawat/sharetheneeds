@@ -72,27 +72,27 @@ ___
 ___
 ### *Screenshots of App*
 #### Location Access Request
-![location Access Alert](./scrrenshots/location_access_request.png)
+![location Access Alert](./screenshots/location_access_request.png)
 
 ___
 ___
 #### Login
 ![Login Screen](./scrrenshots/login_page.png)
-![Login By Phone No](./scrrenshots/phone_number_login.png)
+![Login By Phone No](./screenshots/phone_number_login.png)
 
 ___
 ___
 #### App Interface
-![Home Screen](./scrrenshots/home.png)
-![Sort Menu](./scrrenshots/sort_menu.png)
-![Sidebar Menu](./scrrenshots/sidebar_menu.png)
-![Our Vision Page](./scrrenshots/our_vision.png)
+![Home Screen](./screenshots/home.png)
+![Sort Menu](./screenshots/sort_menu.png)
+![Sidebar Menu](./screenshots/sidebar_menu.png)
+![Our Vision Page](./screenshots/our_vision.png)
 
 ___
 ___
 #### Add Essentials
-![Add Essentials Form](./scrrenshots/add_essentials_form.png)
-![Sort Menu](./scrrenshots/sort_menu.png)
+![Add Essentials Form](./screenshots/add_essentials_form.png)
+![Sort Menu](./screenshots/sort_menu.png)
 
 ___
 ## *Technologies :*
