@@ -15,6 +15,7 @@ ____
 - [Author and Acknowledgment](#author_acknowledgment)
 
 ____
+
 ##  *Description :*
 Our project is focusing on the current situation of covid 19. This project is platform for the people who need help and indeed people who are ready to help. 
 
@@ -22,12 +23,11 @@ Using ShareTheNeeds cross platform mobile based Application migrant or poor peop
 
 Using ShareTheNeeds website we are giving platform to volunteers to mark their location and add their essential items in it so that we can get an idea and be able to visualize that how many volunteers are active through the map and how many people are approaching to them. and then collecting all these data to analyze the what can be improved to help more and more people, all the data analyzed is visually shown through graphs o  our website
 
-___
-
+____
 
 ## *Visuals :*
 ### *Screenshots of Website*
-####Main Screen:
+#### Main Screen:
 ![Main screen](./scrrenshots_web/main_page.png)
 
 ![Main screen](./scrrenshots_web/main_page2.png)
@@ -36,31 +36,31 @@ ___
 
 ___
 ___
-####Analysis
+#### Analysis
 ![Analysis screen](./scrrenshots_web/analysis_page.png)
 ![Analysis screen](./scrrenshots_web/analysis_page2.png)
 
 
 ___
 ___
-####Login/Signup Screen
+#### Login/Signup Screen
 ![login screen](./scrrenshots_web/login_page.png)
 ![signup screen](./scrrenshots_web/signup_page.png)
 
 ___
 ___
-####Map
+#### Map
 ![login screen](./scrrenshots_web/map_page.png)
 ![signup screen](./scrrenshots_web/map_marker_page.png)
 
 ___
 ___
-####Adding Marker 
+#### Adding Marker 
 ![add marker screen](./scrrenshots_web/add_marker_page.png)
 
 ___
 ___
-####View Marker
+#### View Marker
 ![view marker screen](./scrrenshots_web/view_marker_page.png)
 ![view marker details screen](./scrrenshots_web/view_marker_details_page.png)
 
