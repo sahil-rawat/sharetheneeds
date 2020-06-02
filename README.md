@@ -102,7 +102,7 @@ Instructions For Using
 - Requirements - Flutter SDK, Android Studio (or any IDE you preffer for devloping flutter Apps)
 - Import the App Folder in Android Studio or your prefferable IDE 
 - Build APK from the Flutter Project or 
-- Get the APK from: 
+- Get the APK from: https://drive.google.com/file/d/1ef-WEqnGATrHg7yruLcsmDAZ5B9aoRz9/view?usp=sharing
 
 #### Website(Marker Adding) :
 - Clone the Repo locally
