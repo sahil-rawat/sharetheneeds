@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<title>ShareTheNeeds</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'><link rel="stylesheet" href="../assets/css/user.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+		<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+	</head>
+	<body>
+		<!-- Firebase config Script tags -->
+		<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: "AIzaSyDh6qJ0S12sZd_pP45Ka7zyj0whOzQ89EE",
+				authDomain: "hacknu-b9c62.firebaseapp.com",
+				databaseURL: "https://hacknu-b9c62.firebaseio.com",
+				projectId: "hacknu-b9c62",
+				storageBucket: "hacknu-b9c62.appspot.com",
+				messagingSenderId: "781519606976",
+				appId: "1:781519606976:web:afd5fdabf8f5d1fdc90925",
+				measurementId: "G-0XPK0KRLD1"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			firebase.analytics();		
+		</script>
+		<!-- Firebase config Script tags -->
+
+
+		<!-- -------------------navigation bar------------------- -->
+		<nav class="navbar navbar-expand-lg navbar-mainbg">
+			<a class="navbar-brand navbar-logo" href="#">ShareTheNeeds</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars text-white"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<div class="hori-selector">
+						<div class="left"></div>
+						<div class="right"></div>
+					</div>
+					<li class="nav-item active">
+						<a class="nav-link" href="javascript:void(0);" onclick="dashb()">Dashboard</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="javascript:void(0);" onclick="am()">Add Marker</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="javascript:void(0);" onclick="vm()">View Markers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="javascript:void(1);" onclick="pf()">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="javascript:void(1);" onclick="signOut()">SignOut</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- -------------------navigation bar------------------- -->
+
+
+		<!-- -------------------Dashboard Tab------------------------ -->
+
+
+		<!-- --------placeholder for map------------ -->
+		<div id="Dashboard" style="display: block;">
+			<div id="googleMap" style="width:100%;height:800px;"></div>
+		</div>
+		<!-- --------placeholder for map------------ -->
+
+
+		<!-- --------script for managing map-------- -->
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfGzHlXd9V7CjN9QGBh_Yxv8COOprumUE&sensor=false&callback=myMap&libraries=places" type="text/javascript"></script>
+		</div>
+		<!-- -------------------Dashboard Tab------------------------ -->
+
+
+		<!-- -------------------Add Marker Tab-------------------------------- -->
+		<div id="AddMarker" style="display: none;">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="form">
+						<h1 id="form_heading">Add Marker</h1>
+						<fieldset>
+							<legend>
+								<span class="number">1</span> 
+								Volunteers & Camp Info
+							</legend>
+							<div class="form-group">
+								<label for="name">Name:</label>
+								<input type="text" id="name" placeholder="Ex- Sahil Rawat" required>
+							</div>
+							<div class="form-group">
+								<label for="email">Email:</label>
+								<input type="email" id="mail"  placeholder="Ex- abc@gmail.com" required>
+							</div>
+							<div class="form-group">
+								<label for="phone">Phone No:</label>
+								<input type="phone" id="phone" placeholder="Ex- 9999999999" pattern=".{10,}" title="not a valid phone number, Minimum 10 digits, country code not necesarry" required>
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlInput1">Sreet Address</label>
+								<input type="text" class="form-control" id="adressInput" placeholder="Ex- 1234 main st, apt"  required>
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlInput1">Address(Select nearest address from list)</label>
+								<div id="locationField">
+									<input id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text" required >
+									<input id="loca" type="hidden" >
+								</div>
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>
+								<span class="number">2</span>
+							Resources Info
+							</legend>
+							<label>Resources Able to Provide:</label>
+							<input type="radio" id="food" value="Food" name="type" required>
+							<label class="light" for="food">Food Packages
+							</label>
+							<br>
+							<input type="radio" id="grocery" value="Grocery" name="type" required>
+							<label class="light" for="grocery">Grocery Items
+							</label>
+							<br>
+							<input type="radio" id="sanitary" value="Sanitary" name="type" required>
+							<label class="light" for="sanitary">Sanitary Items
+							</label>
+							<br>
+							<input type="radio" id="other" value="Others" name="type"><label class="light" for="other" required>Others</label>
+							<div class="form-group">
+							<label for="bio">Description:</label>
+							<textarea id="bio" name="user_bio" placeholder="Short Description about the resources being provided,Way to Contact and time of camp">
+							</textarea>
+							</div>
+						</fieldset>
+						<div class="form-group">
+							<label id="errorLabelAddMarker">* All Inputs Must be Filled</label>
+						</div>
+						<button id="form_submit"  type="submit" onclick="collectData()">Add Marker</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- -------------------Add Marker Tab-------------------------------- -->
+
+
+		<!-- -------------------View Marker Tab-------------------------------- -->
+		<div id="ViewMarker" style="display: none;">
+		</div>
+		<!-- -------------------View Marker Tab-------------------------------- -->
+
+
+		<!-- -------------------Profile Tab-------------------------------- -->
+		<div class="prof" id="Profile" style="display: none;">
+			<div class="profile_card">
+				<img id="p_image" style="border-radius: 50%" src="../assets/img/profile.jpg" alt="Avatar" width="220" height="200">
+				<p class="details" id="p_name"></p>
+				<p id="p_email" class="details" style="margin: 10px 20px 10px 5px;"></p>
+				<div>
+					<br>
+					<br>
+					<br>
+				</div>
+				<button class="button btnLightBlue btnPush" onclick="signOut()"> Sign Out</button>
+			</div>
+			<div>
+				<br>
+				<br>
+			</div>
+		</div>
+		<!-- -------------------Profile Tab-------------------------------- -->
+
+
+		<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+		<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+		<script  src="../assets/js/user.js"></script>
+	</body>
+</html>
