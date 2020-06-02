@@ -1,5 +1,5 @@
 
-# **ShareTheNeeds**
+# [___ShareTheNeeds___](https://sharetheneeds.herokuapp.com)
 
 ____
 
@@ -15,7 +15,6 @@ ____
 - [Author and Acknowledgment](#author_acknowledgment)
 
 ____
-
 ##  *Description :*
 Our project is focusing on the current situation of covid 19. This project is platform for the people who need help and indeed people who are ready to help. 
 
@@ -23,15 +22,14 @@ Using ShareTheNeeds cross platform mobile based Application migrant or poor peop
 
 Using ShareTheNeeds website we are giving platform to volunteers to mark their location and add their essential items in it so that we can get an idea and be able to visualize that how many volunteers are active through the map and how many people are approaching to them. and then collecting all these data to analyze the what can be improved to help more and more people, all the data analyzed is visually shown through graphs o  our website
 
-____
+___
+
 
 ## *Visuals :*
 ### *Screenshots of Website*
 #### Main Screen:
 ![Main screen](./scrrenshots_web/main_page.png)
-
 ![Main screen](./scrrenshots_web/main_page2.png)
-
 ![Main screen](./scrrenshots_web/main_page3.png)
 
 ___
@@ -39,7 +37,6 @@ ___
 #### Analysis
 ![Analysis screen](./scrrenshots_web/analysis_page.png)
 ![Analysis screen](./scrrenshots_web/analysis_page2.png)
-
 
 ___
 ___
@@ -66,11 +63,10 @@ ___
 
 ___
 ___
-Profile
+#### Profile
 ![profile screen](./scrrenshots_web/profile_page.png)
 
 ___
-
 ## *Technologies :*
 
 We have used different technologies in our app and website which are as follows :
@@ -91,7 +87,7 @@ We have used different technologies in our app and website which are as follows 
 #### Website(Analysis) :
 - Html , CSS - For Creating Basic structure of Our website
 - BootStrap - For creating impressive UI for our FrontEnd
-- Flask - Framework for hosting website
+- Flask - microweb framework for websites
 - Firebase Realtime Databse - Used to extract Data from the firebase cloud databse and then working on that data in python 
 - Python - For analysing the data extracted from firebase and plotting graphs and pie chart using matplotlib library
 
@@ -102,15 +98,15 @@ Instructions For Using
 - Requirements - Flutter SDK, Android Studio (or any IDE you preffer for devloping flutter Apps)
 - Import the App Folder in Android Studio or your prefferable IDE 
 - Build APK from the Flutter Project or 
-- Get the APK from: https://drive.google.com/file/d/1ef-WEqnGATrHg7yruLcsmDAZ5B9aoRz9/view?usp=sharing
+- Get the APK from: 
 
 #### Website(Marker Adding) :
 - Clone the Repo locally
 - Open the Website Folder
 - Install NodeJs on your computer
 - Open Terminal and enter `npm start`
-- Open The Browser and goto 127.0.0.1:3000 or localhost:3000 (if the port is busy look in terminal the port no. and enter that replacing 3000) or
-- Visit : https://sharetheneeds.herokuapp.com
+- Open The Browser and goto `127.0.0.1:3000` or `localhost:3000` (if the port is busy look in terminal the port no. and enter that replacing 3000) or
+- Visit :
 
 #### Website(Analysis) :
 - Clone the repo locally
@@ -121,8 +117,8 @@ Instructions For Using
 ___
 
 ## *Support :*
-- Email id : sharetheneeds@gmail.com
-- Web : https://sharetheneeds.herokuapp.com
+- Contact us at : sharetheneeds@gmail.com
+- Website : https://sharetheneeds.herokuapp.com
 ___
 
 ## *Author and Acknowledment :*
@@ -142,8 +138,8 @@ ___
 - Contribution: Data Analysis in python and flask
 
 ___
-> ### Ish Chaudhary
-- Email: ish.chaudhary18@niituniversity.in
+> ### Ish Choudhary
+- Email: ish.choudhary18@niituniversity.in
 - Contribution: Data Analysis in python and flask
 
 ___
